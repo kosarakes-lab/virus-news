@@ -51,7 +51,7 @@
   .image-feed {
     grid-template-columns: 1fr !important;
     width: 90vw !important;
-    top: calc(50vh + 60px) !important;
+    top: calc(42vh + 90px) !important;
     bottom: 20px;
     gap: 8px;
   }
@@ -59,15 +59,15 @@
   /* Visualization container: full width, relative positioning */
   .viz-container {
     width: 90vw !important;
-    height: 40vh !important;
-    padding: 0 20 0 0 !important;
+    height: 42vh !important;
+    padding: 0 10 0 0 !important;
     position: relative !important;
     margin: 0px !important;
   }
 
   #search-container {
     position: fixed !important;
-    top: calc(45vh + 30px) !important;
+    top: calc(42vh + 30px) !important;
 
   }
 
@@ -78,7 +78,13 @@
 
   .title {
     font-size: 14pt !important;
+    line-height: 1 !important;
+    
   }
+
+  .text {
+  font-size: 11pt !important;
+}
 
   .ticker {
     bottom: 0px !important;
