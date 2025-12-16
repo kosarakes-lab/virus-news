@@ -1,18 +1,26 @@
 /* GENERAL MOBILE LAYOUT */
 @media (max-width: 600px) {
 
-  /* Blog padding / header */
-  .blog {
-    padding: 10px 10px;
+  .nav {
+    gap: 5px;
   }
 
-  .blog-post h1 {
-    font-size: 28px;
+  .nav-link {
+    font-size: 9pt !important;
+    margin: 0 2px !important;
+  }
+
+  /* Blog padding / header */
+  .blog {
+    padding: 10px 10px !important;
+    ;
   }
 
   .blog-post h2 {
-    font-size: 20px;
-    margin-top: 40px;
+    font-size: 20px !important;
+    ;
+    margin-top: 40px !important;
+    ;
   }
 
   .blog-post p,
@@ -22,25 +30,24 @@
   }
 
   .poem {
-    font-size: 2px;
-    line-height: 1.4;
-    text-indent: 0;
-    filter: blur(0.4px);
-    word-break: break-word;
-    margin-left: 0;
+    font-size: 16px !important;
+    line-height: 1.4 !important;
+    word-break: normal !important;
+    margin-left: 0 !important;
     /* remove extra left margin */
-    margin-right: 0;
+    margin-right: 0 !important;
     /* optional for symmetry */
-    padding-left: 0;
+    padding-left: 0 !important;
     /* remove inherited padding from parent */
-    padding-right: 0;
+    padding-right: 0 !important;
+    text-indent: 0 !important;
   }
 
   /* Image-feed: 1 column */
   .image-feed {
     grid-template-columns: 1fr !important;
     width: 90vw !important;
-    top: calc(30vh + 60px);
+    top: calc(55vh + 60px) !important;
     bottom: 20px;
     gap: 8px;
   }
@@ -53,36 +60,37 @@
   /* Visualization container: full width, relative positioning */
   .viz-container {
     width: 90vw !important;
-    height: 35vh;
-    position: relative;
-    margin: 20px auto;
+    height: 40vh !important;
+    padding: 0 20 0 0 !important;
+    position: relative !important;
+    margin: 0px !important;
   }
 
-  /* Viz header: stacked for narrow screens */
-  .viz-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 10px;
-  }
+  #search-container {
+    position: fixed !important;
+    top: calc(50vh + 30px) !important;
 
-  .viz-header> :nth-child(1),
-  .viz-header> :nth-child(2),
-  .viz-header> :nth-child(3) {
-    justify-self: unset;
-    text-align: center;
-    margin: 4px 0;
-  }
-
-  /* Footer stays visible but smaller */
-  .footer {
-    height: 25px;
-    font-size: 9px;
   }
 
   /* Feed wrapper: center and spacing */
   .feed-wrapper {
     margin-top: 20px;
+  }
+
+  .title {
+    font-size: 14pt !important;
+  }
+
+  .ticker {
+    bottom: 25px !important;
+    /* still above footer */
+    height: 0px !important;
+  }
+
+  .ticker-track span {
+    font-size: 10px !important;
+    /* smaller text on phones */
+    padding: 0 12px !important;
   }
 
 }
