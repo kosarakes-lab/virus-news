@@ -6,21 +6,19 @@
   }
 
   .nav-link {
-    font-size: 9pt !important;
-    margin: 0 2px !important;
+    font-size: 10pt !important;
+    margin: 0 4px !important;
   }
 
   /* Blog padding / header */
   .blog {
-    padding: 10px 10px !important;
-    ;
+    padding: 15px 15px 30 15px !important;
   }
 
   .blog-post h2 {
     font-size: 20px !important;
-    ;
     margin-top: 40px !important;
-    ;
+    text-indent: 0 !important;
   }
 
   .blog-post p,
@@ -29,17 +27,23 @@
     line-height: 1.5;
   }
 
+  .content{
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
   .poem {
+    white-space: normal !important;
     font-size: 16px !important;
     line-height: 1.4 !important;
     word-break: normal !important;
     margin-left: 0 !important;
-    /* remove extra left margin */
     margin-right: 0 !important;
-    /* optional for symmetry */
     padding-left: 0 !important;
-    /* remove inherited padding from parent */
     padding-right: 0 !important;
+    text-align: left !important;
     text-indent: 0 !important;
   }
 
@@ -47,7 +51,7 @@
   .image-feed {
     grid-template-columns: 1fr !important;
     width: 90vw !important;
-    top: calc(40vh + 60px) !important;
+    top: calc(50vh + 60px) !important;
     bottom: 20px;
     gap: 8px;
   }
@@ -63,7 +67,7 @@
 
   #search-container {
     position: fixed !important;
-    top: calc(50vh + 30px) !important;
+    top: calc(45vh + 30px) !important;
 
   }
 
@@ -420,7 +424,6 @@ main {
 
 .poem {
   white-space: pre-wrap;
-  /* preserves line breaks and wraps text */
   font-family: "IBM Plex Serif", serif;
   font-weight: 800;
   font-size: 20px;
