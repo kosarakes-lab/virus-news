@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>protocol</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <div class="nav">
+    <a href="index.html" class="nav-link">💣</a>
+    <a href="propagation.html" class="nav-link">propagation</a>
+    <a href="anomalies.html" class="nav-link">anomalies</a>
+    <a href="protocol.html" class="nav-link active">protocol</a>
+  </div>
+
+  <main class="content">
+    <main class="blog">
+
+      <!-- Article -->
+      <article class="blog-post">
+
+        <p class="intro">
+          In an environment where news is recycled, blurred, and endlessly scrolled, information behaves more like a
+          system than a story. This experiment does not seek to determine where information originates, but rather to
+          examine how it behaves once released into a saturated media environment. By reconstructing the replication
+          anatomy of repeated news articles across multiple outlets, the project approaches news content not as
+          narrative, but as organism that mutates minimally, spreads efficiently, and prioritizes visibility over truth.
+
+        </p>
+
+        <!-- Section 1 -->
+        <h2>Sources</h2>
+
+        <p>
+          The first step involved defining the corpus of news websites to be analyzed. The selection process followed
+          two complementary paths.
+        </p>
+        <p>
+          An initial group of websites was identified through direct observation of dissemination practices within
+          Bulgarian Facebook news groups. In these spaces, specific troll-like accounts repeatedly circulated links from
+          a small set of outlets (most notably novinite-dnes.eu and 24chasa.eu) which themselves frequently linked to or
+          republished content originating from narod.bg. These websites formed the initial nucleus of the dataset.
+        </p>
+        <p>
+          A second group of websites was identified through content similarity. Articles published on the initial sites
+          were used as reference points to locate identical or near-identical texts appearing elsewhere. This process
+          revealed a broader network of media outlets engaged in republishing the same narratives, ultimately resulting
+          in a final corpus of 13 websites.
+        </p>
+        <p>
+          Rather than aiming for representativeness of the Bulgarian media landscape as a whole, the selection
+          deliberately focused on a tightly interconnected ecosystem in which content replication appeared systematic
+          rather than incidental.
+
+        </p>
+
+
+        <!-- Section 2 -->
+        <h2>Data collection</h2>
+
+        <p>
+          Dedicated scrapers were developed for each website to collect all articles published in 2025, restricted to
+          sections related to politics and Bulgaria. Although section naming varied across platforms, this constraint
+          ensured topical consistency while enabling comparison across structurally different websites.
+        </p>
+
+        <figure class="blog-image">
+          <img src="images_protocol/scrapping.png" alt="Scrapping process">
+          <figcaption>
+            Part of the scrapper.
+          </figcaption>
+        </figure>
+
+        <p>
+          Each article page was scraped individually, and the following elements were extracted whenever available:
+          media name, article title, article URL, publication date and time, excerpt, and associated image. The scraping
+          process was designed to preserve the original formatting of titles and texts as closely as possible, including
+          capitalization and punctuation, as these details later proved crucial for identifying exact textual
+          repetitions.
+
+        </p>
+
+        <!-- Section 3 -->
+        <h2>Analysis</h2>
+
+        <p>
+          The data collection process resulted in a dataset of more than 43,507 entries, each corresponding to a single
+          published article. The core analysis focused on identifying exact textual repetitions across different media
+          outlets. Articles were systematically compared to detect cases in which identical titles appeared in at least
+          two distinct sources within the 13-site corpus. At this stage, only exact matches were retained;
+          near-duplicates, paraphrases, and partially edited versions were deliberately excluded in order to isolate the
+          most explicit form of replication.
+
+        </p>
+        <figure class="blog-image">
+          <img src="images_protocol/dataset.png" alt="Dataset from the collected articles">
+          <figcaption>
+            The dataset from all the articles collected.
+          </figcaption>
+        </figure>
+        <p>
+          Applying these replication criteria reduced the dataset to approximately 10% of the original articles. This
+          subset is interpreted as indicative of paid or coordinated content, where repetition is not incidental but
+          structural. In this context, replication functions less as citation and more as a mechanism of synchronized
+          distribution.
+
+        </p>
+
+        <!-- Section 4 -->
+        <h2>Findings</h2>
+
+        <p>
+          This analysis does not seek to determine the origin of information, but rather to observe its behavior once
+          released into a saturated media environment. By reconstructing the replication anatomy of repeated articles,
+          news content is approached not as narrative but as organism: mutating minimally, spreading efficiently, and
+          optimizing for visibility rather than truth.
+        </p>
+        <p>
+          Replication anatomy is understood here as the temporal and spatial structure through which an article
+          reproduces across media outlets. It is measured from the moment of first appearance and expressed through
+          patterns of clustered simultaneity, compressed propagation, and delayed reactivation.
+
+        </p>
+        <figure class="blog-image">
+          <img src="images_protocol/results.png" alt="Results">
+          <figcaption>
+            Results about the replication frequency. 
+          </figcaption>
+        </figure>
+        <p>
+          The most striking finding concerns the immediacy of replication. The minimum replication time across the
+          dataset is zero minutes. Both the first quartile and the median are also zero, meaning that at least 50% of
+          all reposts occur within the exact same minute as the article’s first appearance.
+        </p>
+        <p>
+          Such simultaneity strongly suggests that replication is not driven by organic discovery or audience
+          engagement. Instead, it points to pre-prepared content, syndication mechanisms, immediate copying upon
+          publication, or the use of shared backends, content management systems, or feeds. In this context, replication
+          appears less as response and more as execution.
+        </p>
+        <p>
+          Beyond instantaneous reposting, replication remains tightly compressed in time. Approximately 75% of all
+          reposts occur within 3.4 minutes of the initial publication. This narrow temporal window leaves little room
+          for interpretation as organic sharing or editorial decision-making.
+
+        </p>
+        <p>
+          Rather than persuasion unfolding over time, the data indicates pressure: a coordinated burst designed to
+          saturate the media space as quickly as possible. Visibility is achieved not through accumulation, but through
+          simultaneity. The spectacle, as described in the accompanying poetic framework, arrives first as noise.
+
+        </p>
+        <figure class="blog-image">
+          <img src="images_protocol/replication_anatomy.png" alt="Replication anatomy">
+          <figcaption>
+            This is the process of replication of one article. 
+          </figcaption>
+        </figure>
+        <p>
+          Taken together, these findings support the interpretation of replication as structural rather than incidental.
+          The absence of an incubation phase, the immediacy of reproduction, the minimal mutation of titles and images,
+          and the presence of rare but extended latency all align with the metaphor of viral behavior.
+
+        </p>
+        <p>
+          In this framework, news circulation resembles content deployment rather than journalistic exchange. The
+          spectacle does not persuade through argument, but conditions through repetition. It arrives first as noise,
+          then as narrative, and finally as habit.
+
+        </p>
+
+      </article>
+
+    </main>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>Virus news. No rights reserved.</p>
+  </footer>
+</body>
+
+</html>
