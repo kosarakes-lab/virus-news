@@ -47,7 +47,7 @@
   .image-feed {
     grid-template-columns: 1fr !important;
     width: 90vw !important;
-    top: calc(55vh + 60px) !important;
+    top: calc(40vh + 60px) !important;
     bottom: 20px;
     gap: 8px;
   }
