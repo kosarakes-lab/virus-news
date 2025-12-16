@@ -36,8 +36,7 @@
 
   .poem {
     white-space: normal !important;
-    font-size: 16px !important;
-    line-height: 1.4 !important;
+    font-size: 20px !important;
     word-break: normal !important;
     margin-left: 0 !important;
     margin-right: 0 !important;
@@ -394,6 +393,7 @@ main {
 
 .blog-post .intro {
   font-size: 20px;
+  line-height: 1.6;
   margin-bottom: 48px;
   color: #6ED58A;
   filter: blur(0.6px);
